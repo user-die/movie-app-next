@@ -1,0 +1,35 @@
+{
+  "name": "movie-app-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/env": "^14.2.7",
+    "@nextui-org/pagination": "^2.0.35",
+    "@nextui-org/react": "^2.4.6",
+    "@nextui-org/tabs": "^2.0.35",
+    "@vercel/postgres": "^0.9.0",
+    "next": "14.2.7",
+    "react": "^18",
+    "react-bootstrap-icons": "^1.11.4",
+    "react-dom": "^18",
+    "react-intersection-observer": "^9.13.0",
+    "react-transition-group": "^4.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-transition-group": "^4.4.11",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
