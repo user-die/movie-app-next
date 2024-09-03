@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="./favicon.svg" sizes="any" />
       </head>
-      <body className={inter.className + "bg-bg1"}>
+      <body className={inter.className + " bg-bg1"}>
         <Navbar />
         {children}
       </body>
