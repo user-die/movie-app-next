@@ -28,11 +28,11 @@ function MainSearch() {
   }, [search, page]);
 
   return (
-    <section className="bg-bg2 mt-4 rounded-2xl">
+    <section className="bg-bg2 rounded-2xl">
       <form
         action=""
         onSubmit={(e) => e.preventDefault()}
-        className="flex  p-3 rounded-xl w-full mx-auto gap-4 justify-center"
+        className="flex p-3 rounded-xl w-full mx-auto gap-4 justify-center"
       >
         <input
           type="text"

@@ -59,7 +59,7 @@ const About = ({ film }: { film: Film }) => {
       {film?.year && (
         <>
           <p className="text-text">Год</p>
-          <p>{film?.year}</p>
+          <p className="text-white">{film?.year}</p>
         </>
       )}
 
@@ -67,7 +67,7 @@ const About = ({ film }: { film: Film }) => {
         <>
           {" "}
           <p className="text-text">Бюджет</p>
-          <p>
+          <p className="text-white">
             {film?.budget?.value?.toLocaleString("ru")}
             {film?.budget?.currency}
           </p>
@@ -77,7 +77,7 @@ const About = ({ film }: { film: Film }) => {
       {film?.countries?.length > 0 && (
         <>
           <p className="text-text">Страна</p>
-          <p>
+          <p className="text-white">
             <span>{film?.countries?.map((el) => el.name).join(", ")}</span>
           </p>
         </>
@@ -86,7 +86,7 @@ const About = ({ film }: { film: Film }) => {
       {film?.premiere?.russia && (
         <>
           <p className="text-text">Премьера в России</p>
-          <p>
+          <p className="text-white">
             {new Date(film?.premiere?.russia).toLocaleDateString("ru-RU", {
               day: "numeric",
               month: "long",
@@ -99,7 +99,7 @@ const About = ({ film }: { film: Film }) => {
       {film?.genres?.length > 0 && (
         <>
           <p className="text-text">Жанры</p>
-          <p>
+          <p className="text-white">
             <span>{film?.genres?.map((el) => el.name).join(", ")}</span>
           </p>
         </>
@@ -108,7 +108,7 @@ const About = ({ film }: { film: Film }) => {
       {film?.premiere?.world && (
         <>
           <p className="text-text">Премьера в мире</p>
-          <p>
+          <p className="text-white">
             {new Date(film?.premiere?.world).toLocaleDateString("ru-RU", {
               day: "numeric",
               month: "long",
@@ -121,7 +121,7 @@ const About = ({ film }: { film: Film }) => {
       {film.movieLength && (
         <>
           <p className="text-text">Время</p>
-          <p>{getTimeFromMins(film.movieLength)}</p>
+          <p className="text-white">{getTimeFromMins(film.movieLength)}</p>
         </>
       )}
 
@@ -129,14 +129,14 @@ const About = ({ film }: { film: Film }) => {
         <>
           {" "}
           <p className="text-text">Возраст</p>
-          <p>{film.ageRating}+</p>
+          <p className="text-white">{film.ageRating}+</p>
         </>
       )}
 
       {film.director && (
         <>
           <p className="text-text">Режиссер</p>
-          <p>{film.director}</p>
+          <p className="text-white">{film.director}</p>
         </>
       )}
 
@@ -150,7 +150,7 @@ const About = ({ film }: { film: Film }) => {
       )}
 
       {film?.fees?.world?.value > 0 && (
-        <p className="flex flex-col">
+        <p className="flex flex-col text-white">
           <br />
           <span>
             {film?.fees?.world?.value?.toLocaleString("ru")}

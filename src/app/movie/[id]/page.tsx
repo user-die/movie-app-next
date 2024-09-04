@@ -4,6 +4,7 @@ import Watch from "../components/Watch";
 import WishlistButton from "@/components/WishlistButton";
 import Image from "next/image";
 import Content from "../components/Content";
+import { Award } from "@/types";
 
 export default async function Movie(params: { params: { id: string } }) {
   const data = await fetch(fetch1.baseUrl + `/movie/${params.params.id}`, {
@@ -79,7 +80,7 @@ export default async function Movie(params: { params: { id: string } }) {
             </div>
 
             <div className="flex justify-center gap-3 row-start-2 md:row-start-1 md:col-start-4 md:col-end-5">
-              {
+              {/*
                 <WishlistButton
                   type="wishlist"
                   id={film.id}
@@ -93,7 +94,7 @@ export default async function Movie(params: { params: { id: string } }) {
                   id={film.id}
                   text="В избранное"
                 />
-              }
+              */}
             </div>
           </section>
 

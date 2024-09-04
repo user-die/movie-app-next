@@ -28,10 +28,10 @@ const OtherFilms = ({ text, films }: { text: string; films: Film[] }) => {
                     }
                     className="rounded-2xl"
                   />
-                  <p className="text-center">
+                  <p className="text-center text-text">
                     {sequel?.name || sequel?.alternativeName}
                   </p>
-                  <p className="text-center">{sequel?.year}</p>
+                  <p className="text-center text-text">{sequel?.year}</p>
                 </Link>
               ))}
           </div>

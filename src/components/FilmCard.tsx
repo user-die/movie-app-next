@@ -60,7 +60,7 @@ export default function FilmCard({
                   : "mt-2 grid-rows-[auto,_auto,_auto] h-full justify-items-center"
               }`}
             >
-              <h3 className="text-2xl font-bold text-center row-start-1 row-end-2">
+              <h3 className="text-2xl font-bold text-center row-start-1 row-end-2 text-ellipsis overflow-hidden h-full w-full">
                 {film?.name ||
                   film?.nameRu ||
                   film?.nameEn ||

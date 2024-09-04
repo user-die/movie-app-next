@@ -36,7 +36,7 @@ export default async function About({ actor }: { actor: Actor }) {
         {actor?.birthday && (
           <>
             <p className="text-text">Дата рождения</p>
-            <p>
+            <p className="text-white">
               {new Date(actor?.birthday).toLocaleDateString("ru-RU", {
                 day: "numeric",
                 month: "long",
@@ -49,28 +49,32 @@ export default async function About({ actor }: { actor: Actor }) {
         {actor?.birthday && (
           <>
             <p className="text-text">Возраст</p>
-            <p>{pluralAge(calculateAge(new Date(actor?.birthday)))}</p>
+            <p className="text-white">
+              {pluralAge(calculateAge(new Date(actor?.birthday)))}
+            </p>
           </>
         )}
 
         {actor?.growth && (
           <>
             <p className="text-text">Рост</p>
-            <p>{actor?.growth} см</p>
+            <p className="text-white">{actor?.growth} см</p>
           </>
         )}
 
         {actor?.birthday && (
           <>
             <p className="text-text">Место рождения</p>
-            <span>{actor?.birthPlace?.map((el) => el.value).join(", ")}</span>
+            <span className="text-white">
+              {actor?.birthPlace?.map((el) => el.value).join(", ")}
+            </span>
           </>
         )}
 
         {actor?.movies?.filter((el) => el?.enProfession == "actor").length && (
           <>
             <p className="text-text">Всего фильмов</p>
-            <p>
+            <p className="text-white">
               {
                 actor?.movies?.filter((el) => el?.enProfession == "actor")
                   .length
@@ -82,7 +86,7 @@ export default async function About({ actor }: { actor: Actor }) {
         {actor?.countAwards && (
           <>
             <p className="text-text">Количество наград</p>
-            <p>{actor?.countAwards}</p>
+            <p className="text-white">{actor?.countAwards}</p>
           </>
         )}
       </section>

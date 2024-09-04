@@ -2,5 +2,7 @@
   "name": "Movie App",
   "short_name": "Movie App",
   "description": "Movie Search App",
-  "start_url": "/"
+  "start_url": "/",
+  "theme_color": "#000000",
+  "background_color": "#000000"
 }

@@ -90,29 +90,29 @@ const FilmTable = ({ films }: { films: Film[] }) => {
   );
 
   return (
-    <div className="container mx-auto xl:px-40">
+    <div className="container mx-auto xl:px-40 p-2">
       <form
         action=""
         onSubmit={(e) => e.preventDefault()}
-        className="flex bg-bg2 p-3 rounded-xl w-full mx-auto gap-4 justify-center"
+        className="flex bg-bg2 p-3 rounded-xl w-full mx-auto gap-4 justify-center flex-col sm:flex-row"
       >
         <input
           type="text"
           name="search-by-name"
           id="search-name"
-          className="search rounded-xl p-1 pl-8 pr-2 bg-bg3"
+          className="search rounded-xl p-3 pl-10 pr-2 bg-bg3 border-blue border-2"
           value={search}
           placeholder="Поиск по названию..."
           onChange={(e) => setSearch(e.target.value)}
         />
 
-        <label htmlFor="select-genre" className="self-center">
+        <label htmlFor="select-genre" className="self-center hidden sm:block">
           Жанр
         </label>
         <select
           name="select-by-genre"
           id="select-genre"
-          className="rounded-xl p-1 px-2 bg-bg3"
+          className="rounded-xl p-3 px-2 bg-bg3 border-blue border-2"
           value={genre}
           onChange={(e) => setGenre(e.target.value)}
         >
@@ -147,7 +147,7 @@ const FilmTable = ({ films }: { films: Film[] }) => {
         </select>
             */}
 
-        <div>
+        <div className="hidden sm:block">
           <button
             className="bg-bg3 p-3 rounded-lg text-white"
             onClick={() => setListType((prev) => !prev)}

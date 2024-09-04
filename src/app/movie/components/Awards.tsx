@@ -12,10 +12,13 @@ export default function Awards({ awards }: { awards: Award[] }) {
               ?.filter((el: Award) => el.win)
               .map((award: Award) => (
                 <li key={award?.nominationName + award?.name + award?.year}>
-                  {award?.name}, {award?.year}, {award?.nominationName}
-                  {(award?.persons[0]?.nameRu &&
-                    " - " + award?.persons[0]?.nameRu) ||
-                    award?.persons[0]?.nameEn}
+                  <p>
+                    {" "}
+                    {award?.name}, {award?.year}, {award?.nominationName}
+                    {(award?.persons[0]?.nameRu &&
+                      " - " + award?.persons[0]?.nameRu) ||
+                      award?.persons[0]?.nameEn}
+                  </p>
                 </li>
               ))}
           </ul>

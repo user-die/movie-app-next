@@ -35,10 +35,10 @@ const Staff = ({
                 className="rounded-2xl h-auto w-auto"
               />
 
-              <p className="text-center">{actor?.name}</p>
+              <p className="text-center text-text">{actor?.name}</p>
 
               {actor?.description && (
-                <p className="text-center">{actor?.description}</p>
+                <p className="text-center text-text">{actor?.description}</p>
               )}
 
               <p className="m-0 text-warning w120">

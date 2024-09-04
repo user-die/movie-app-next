@@ -69,3 +69,8 @@ body {
   border-radius: 10px;
   background-color: #212529;
 }
+
+select {
+  appearance: none;
+  background: url("@/../assets/arrow.svg") no-repeat 94% 50%;
+}

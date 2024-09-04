@@ -25,7 +25,7 @@ export default async function FilmsTable({
                   <Image
                     src={`https://st.kp.yandex.net/images/film_iphone/iphone90_${film?.id}.jpg`}
                     alt="Постер фильма"
-                    className="rounded-2 h-auto w-auto"
+                    className="rounded-2"
                     width={70}
                     height={100}
                   />

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default async function Home() {
   return (
     <>
-      <main className="container mx-auto xl:px-40 py-4 px-2">
+      <main className="container mx-auto xl:px-40  px-2">
         <MainSearch />
         <Releases />
       </main>
